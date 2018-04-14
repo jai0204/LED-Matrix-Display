@@ -1,4 +1,4 @@
-/*Program to display scrolling text - "HAPPY" using common anode configuration on 5x3 led matrix*/
+/*Program to display scrolling text - "HAPPY" using 5x3 led matrix*/
 #include<reg52.h>//header file for 8051 microcontroller(at89s52)
 #include<stdio.h>
 void delay(int);
@@ -33,7 +33,7 @@ void main()
         delay(200);
     }
 }
-void delay(int val)
+void delay(int val) //function for proper delay
 {
     int m,n;
     for(m=0;m<val;m++)
